@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="Colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Yaseen</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perso.css">
+</head>
+<body>
+<div class="main-wrapper main-wrapper-first">
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-top d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a style="display:flex;align-items: center" href="index.html">
+                            <img style="max-height: 70px" src="img/logo.png" alt="">
+                            <h1 style='color:#aa0a5f;font-size:40px;margin-left:15px;display:inline-block;font-family:"Cherry"'>
+                                Slurp</h1>
+                        </a>
+                    </div>
+                    <div class="main-menubar d-flex align-items-center">
+                        <nav class="hide">
+                            <a href="index.html">Accueil</a>
+                            <a href="trouvezRecettes.html">Trouver une recette</a>
+                            <a href="recettesFavorites.html">Mes recettes</a>
+                            <a href="aliment.html">Ingrédients</a>
+                            <a href="connexion.html">Connexion</a>
+                        </nav>
+                        <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="banner-area generic-banner generic-banner-4">
+            <div class="container">
+                <div class="row justify-content-center generic-height align-items-center">
+                    <div class="col-lg-12">
+                        <div class="banner-content text-center">
+                            <div class="row justify-content-center">
+                                <h1 class="text-white text-uppercase">Recherchez la recette parfaite</h1>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 inputIngdt inputIngdtWith">
+                                    <div>
+                                        <div class="add-ingdt relative">
+
+                                            <select class="ingdtInputWith form-control autoSelectWith" name="ingdtWith"
+                                                    placeholder="Ingrédient à ajouter"
+                                                    onfocus="this.placeholder = ''"
+                                                    onblur="this.placeholder = 'Ingrédient à ajouter'"
+                                                    autocomplete="off"></select>
+
+                                            <div style="position: absolute; left: -5000px;">
+                                                <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a"
+                                                       tabindex="-1" value="">
+                                            </div>
+                                            <button class="btn-ajouter-ingdtWith primary-btn btn-style-positif hover d-inline-flex align-items-center">
+                                                <span class="mr-10">Ajouter</span>
+                                                <span
+                                                        class="lnr lnr-arrow-right">
+
+                                            </span>
+                                            </button>
+                                            <div class="info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 inputIngdt inputIngdtWithout">
+                                    <div>
+                                        <div class="add-ingdt relative">
+                                            <select class="ingdtInputWith form-control autoSelectWithout"
+                                                    name="ingdtWithout" placeholder="Ingrédient à retirer"
+                                                    onfocus="this.placeholder = ''"
+                                                    onblur="this.placeholder = 'Ingrédient à retirer'"
+                                                    autocomplete="off"></select>
+
+                                            <div style="position: absolute; left: -5000px;">
+                                                <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a"
+                                                       tabindex="-1" value="">
+                                            </div>
+                                            <button class="btn-ajouter-ingdtWithout primary-btn btn-style-negatif hover d-inline-flex align-items-center">
+                                                <span class="mr-10">Ajouter</span>
+                                                <span
+                                                        class="lnr lnr-arrow-right">
+
+                                            </span>
+                                            </button>
+                                            <div class="info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center mt-4">
+                                <div class="mt-4 mt-md-0 col-6">
+                                    <div class=" w-100 text-center justify-content-center listIngdtWith">
+
+                                    </div>
+                                </div>
+                                <div class="mt-4 mt-md-0 col-6">
+                                    <div class=" w-100 text-center justify-content-center listIngdtWithout">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center mt-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="pl-3 pr-3 pt-2 pb-2 switchGroupSearchCateg switch-wrap d-flex justify-content-center">
+                                    <div class="mr-2">Recherche avec des catégories d'ingrédients</div>
+                                    <div class="primary-switch">
+                                        <input type="checkbox" id="default-switch">
+                                        <label for="default-switch"></label>
+                                    </div>
+                                </div>
+
+                                <button class="h4 col-8 col-md-4 primary-btn btn-valider-search-recette hover d-flex align-items-center justify-content-center align-content-center text-dark">
+                                    <span class="mr-10">Effectuer la recherche</span>
+                                    <span class="lnr lnr-arrow-right"> </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-40">
+        <div class="listAffichRecettes container d-flex flex-column">
+            <!--            <div class="row p-5">-->
+            <!--                <div class="col-12 text-center h4">-->
+            <!--                    <div>-->
+            <!--                        Pas de recette trouvée-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-12 mt-3">-->
+<!--                                <div class="p-4 carteRecetteExempleSearchRecette">-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="h5 col-12 col-md-6">-->
+<!--                                            Intitulé de la recette-->
+<!--                                        </div>-->
+<!--                                        <div class="h5 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-grey">-->
+<!--                                            Ingrédients voulus-->
+<!--                                        </div>-->
+<!--                                        <div class="h5 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft border-grey">-->
+<!--                                            Ingrédients non voulus-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+            <!--            <div class="row">-->
+            <!--                <div class="col-12 mt-3">-->
+            <!--                    <div class="p-4 carteRecetteSearchRecette linGradRecetteGood">-->
+            <!--                    <div class="row">-->
+            <!--                        <div class="titreCarteRecette h4 col-12 col-md-6 d-flex justify-content-center align-content-center flex-column">-->
+            <!--                            Sangria-->
+            <!--                        </div>-->
+            <!--                        <div class="h3 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-white d-flex flex-row justify-content-center align-content-center">-->
+            <!--                            <div class="badgeNumberCarteRecette d-flex flex-column justify-content-center align-content-center">-->
+            <!--                                4-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="h3 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-white d-flex flex-row justify-content-center align-content-center">-->
+            <!--                            <div class="badgeNumberCarteRecette d-flex flex-column justify-content-center align-content-center">-->
+            <!--                                1-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+
+            <!--            <div class="row">-->
+            <!--                <div class="col-12 mt-3">-->
+            <!--                    <div class="p-4 carteRecetteSearchRecette linGradRecetteNormal">-->
+            <!--                        <div class="row">-->
+            <!--                            <div class="titreCarteRecette h4 col-12 col-md-6 d-flex justify-content-center align-content-center flex-column">-->
+            <!--                                Sangria-->
+            <!--                            </div>-->
+            <!--                            <div class="h3 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-white d-flex flex-row justify-content-center align-content-center">-->
+            <!--                                <div class="badgeNumberCarteRecette d-flex flex-column justify-content-center align-content-center">-->
+            <!--                                    4-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                            <div class="h3 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-white d-flex flex-row justify-content-center align-content-center">-->
+            <!--                                <div class="badgeNumberCarteRecette d-flex flex-column justify-content-center align-content-center">-->
+            <!--                                    1-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+
+<!--                        <div class="row">-->
+<!--                            <div class="col-12 mt-3">-->
+<!--                                <div class="p-4 carteRecetteSearchRecette linGradRecetteBad">-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="titreCarteRecette h4 col-12 col-md-6 d-flex justify-content-center align-content-center flex-column">-->
+<!--                                            Sangria-->
+<!--                                        </div>-->
+<!--                                        <div class="h3 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-white d-flex flex-row justify-content-center align-content-center">-->
+<!--                                            <div class="badgeNumberCarteRecette d-flex flex-column justify-content-center align-content-center">-->
+<!--                                                4-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="h3 col-6 mt-4 mt-md-0 col-md-3 vertLineLeft-md border-white d-flex flex-row justify-content-center align-content-center">-->
+<!--                                            <div class="badgeNumberCarteRecette d-flex flex-column justify-content-center align-content-center">-->
+<!--                                                1-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+        </div>
+    </section>
+    <section>
+
+        <!--        Partie sur les recettes-->
+        <div class="banner-area generic-banner generic-banner-3">
+            <div class="container">
+                <div class="row mt-40">
+                    <div class="mt-4 mt-md-0 col-md-12">
+                        <div class="p-5 row text-center justify-content-center">
+                            <h1 class="text-white w-100 text-uppercase mb-2">Idées de recettes</h1>
+
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Raifortissimo
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Raifortissimo.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Sangria sans alcool
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Sangria_sans_alcool.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Frosty lime
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Frosty_lime.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Shoot up
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Shoot_up.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Screwdriver
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Screwdriver.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Tipunch
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Tipunch.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Coconut kiss
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/img/Coconut_kiss.jpg");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-4 col-12 col-md-6 col-lg-3">
+                                <a href="recette.html">
+                                    <div class="partieIngredient carteRecetteDansIngredient">
+                                        Bon cocktail
+                                        <hr>
+                                        <div class="imgRecetteDansIngredient"
+                                             style='background-image: url("img/cocktail-template.png");'></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        -->
+    </section>
+
+    <section class="footer-area pt-60 pb-60">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <ul class="footer-menu">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="trouvezRecettes.html">Trouver une recette</a>
+                    </li>
+                    <li>
+                        <a href="recettesFavorites.html">Mes recettes</a>
+                    </li>
+                    <li>
+                        <a href="aliment.html">Ingrédients</a>
+                    </li>
+                    <li>
+                        <a href="connexion.html">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+            </footer>
+    </section>
+    <!-- End Footer Widget Area -->
+</div>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+<script src="js/jsSearchRecette.js"></script>
+</body>
+</html>

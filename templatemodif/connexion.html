@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="Colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Yaseen</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perso.css">
+</head>
+<body>
+<div class="container-fluid bgConnexion d-flex justify-content-center align-items-center flex-column">
+    <div class="identificationBox">
+        <div class="titreIdentification h1 p-3">
+            <a href="index.html" class="mr-3 ml-1 goBackIdentification">
+                <img src="img/imgSlurp/previous.png">
+            </a>
+            Connexion
+        </div>
+        <form class="d-flex justify-content-around flex-column align-content-between connexionForm p-4" action="/connexion.php" method="post">
+            <div class="itemFormIdentification text-center pl-3 pr-3">
+                Vous ne possédez pas de compte ? Inscrivez-vous ici :
+                <a href="inscription.html" class="ml-2 switchConnexionInscription">
+                    <img src="img/imgSlurp/right.png">
+                </a>
+            </div>
+<!--            <div class="itemFormIdentification text-center pl-3 pr-3 text-danger">-->
+<!--                Nous n'avons pas réussi à vous connecter-->
+<!--            </div>-->
+            <label class="itemFormIdentification">
+                <div class="text-dark">Email</div>
+                <input type="email" name="email" placeholder="Votre adresse email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre adresse email'" required class="mt-10 single-input">
+            </label>
+            <label class="itemFormIdentification">
+                <div class="text-dark">Mot de passe</div>
+                <input type="password" name="password" placeholder="Votre mot de passe" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre mot de passe'" required class="mt-10 single-input">
+            </label>
+            <div class="itemFormIdentification text-center">
+                <button class="submitIdentification" type="submit"><img src="img/imgSlurp/check.png"></button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Footer Widget Area -->
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,714 @@
+html {
+    --bleu-clair-fond: #00c3d9;
+    --jaune-fond: #fff052;
+    --rose-foncé-titre: #aa0a5f;
+    --rouge: #ff0c38;
+    --jaune-clair: #ffe477;
+    --bleu-clair: #50e5d9;
+    --mauve: #E65EFF;
+    --jaune-orange: #ffd40c;
+    --bleu-profond: #4400a5;
+    --vert-eau: #16A085;
+    --vert-clair: #63e59f;
+    --jaune-pale:#FFF6B7;
+    --rouge-pale: #F6416C;
+    --orange: #ff8837;
+    --rouge-clair : #ff5858;
+    --vert-pale:#baffda;
+    --orange-pale:#ffc7bb;
+    --mauve-pale: #f09cff;
+    --bleu-roi: #0022ff;
+    --bleu-clair2: #43aeff;
+    --bleu-pale: #d1f8ff;
+    --blanc-grisatre: #e3e3e3;
+    --bleu-fonce: #002286;
+}
+
+.site_title {
+    color: var(--rose-foncé-titre);
+    font-size: 40px;
+    margin-left: 15px;
+    display: inline-block;
+    font-family: "Cherry", serif;
+}
+
+.bgConnexion{
+    background: linear-gradient(318deg, var(--vert-eau), var(--bleu-profond));
+    width: 100%;
+    min-height: 100vh;
+    background-size: 800% 800%;
+
+    -webkit-animation: backgroundIdentificationAnimation 10s ease infinite;
+    -moz-animation: backgroundIdentificationAnimation 10s ease infinite;
+    animation: backgroundIdentificationAnimation 10s ease infinite;
+}
+
+.bgInscription{
+    background: linear-gradient(318deg,  var(--jaune-orange),  var(--rouge-clair));
+    width: 100%;
+    min-height: 100vh;
+    background-size: 800% 800%;
+
+    -webkit-animation: backgroundIdentificationAnimation 13s ease infinite;
+    -moz-animation: backgroundIdentificationAnimation 13s ease infinite;
+    animation: backgroundIdentificationAnimation 13s ease infinite;
+}
+
+.titreIdentification{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.connexionForm,.inscriptionForm, .modifProfilForm{
+    background-color: white;
+    transition: 1s;
+}
+.connexionForm{
+    width:550px;
+    height:400px;
+}
+.inscriptionForm{
+    width:750px;
+    height:750px;
+}
+
+.modifProfilForm{
+    width:100%;
+    height:auto;
+}
+
+.modifProfilForm label{
+    margin-bottom: 20px !important;
+}
+
+.flex-1{
+    flex:1;
+}
+
+.btnAjoutFavorite{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: var(--bleu-clair);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: black;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.btnAjoutFavorite:hover{
+    width: 52px;
+    height: 52px;
+    right: -16px;
+    top: -16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.btnAjoutFavorite:active{
+    width: 48px;
+    height: 48px;
+    right: -14px;
+    top: -14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.btnAjoutFavorite img{
+    padding: 12px;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 1s;
+}
+
+.identificationBox{
+    box-shadow: -5px 5px 10px 0 rgba(126, 126, 126, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    right: 0;
+}
+
+.submitIdentification{
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    /*background-color: var(--blanc-grisatre);*/
+    background-color: white;
+    transition:0.2s;
+    box-shadow: -2px 2px 10px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.submitIdentification:hover{
+    width: 73px;
+    height: 73px;
+    box-shadow: -5px 5px 23px 0 rgba(0,0,0,0.2);
+}
+
+.submitIdentification:active{
+    width: 68px;
+    height: 68px;
+    top:0;
+    right: 0;
+    box-shadow: -1px 1px 18px 0 rgba(0,0,0,0.2);
+}
+
+.submitIdentification img, .switchConnexionInscription img, .goBackIdentification img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.titrePartModifForm{
+    border-bottom: 1px solid var(--bleu-fonce);
+}
+
+.border-bleu{
+    border-color: var(--bleu-fonce) !important;
+}
+
+.goBackIdentification{
+    display: inline-block;
+    height: 40px;
+}
+
+.goBackIdentification img{
+    opacity: 0.7;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.goBackIdentification img:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.goBackIdentification img:active{
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+
+.switchConnexionInscription{
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.switchConnexionInscription:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.switchConnexionInscription:active{
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+}
+
+
+@-webkit-keyframes backgroundIdentificationAnimation {
+    0%{background-position:2% 0}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0}
+}
+@-moz-keyframes backgroundIdentificationAnimation {
+    0%{background-position:2% 0}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0}
+}
+@keyframes backgroundIdentificationAnimation {
+    0%{background-position:2% 0}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0}
+}
+
+.itemForm100{
+    width: 100%;
+}
+
+.itemForm50{
+    width: 50%;
+}
+.itemForm30{
+    width: 30%;
+}
+
+
+
+.btn-style-positif {
+    background-image: linear-gradient(to right, var(--vert-eau) 0%, var(--vert-clair)  51%, var(--vert-eau)  100%) !important;
+}
+.btn-style-negatif {
+    background-image: linear-gradient(to right, var(--rouge) 0%,  var(--orange)  51%,  var(--rouge)  100%) !important;
+}
+.btn-style-positif,.btn-style-negatif {
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto !important;
+    display: block;
+}
+
+.btn-style-positif:hover,.btn-style-negatif:hover {
+    background-position: right center;
+    text-decoration: none;
+}
+
+
+
+.p1-gradient-bg, body:after {
+    background-image: linear-gradient(135deg, var(--bleu-clair-fond) 0%, var(--jaune-fond) 100%);
+}
+
+.p2-gradient-bg, .feature-area, .primary-btn-style:after, .subscription-area {
+    background-image: linear-gradient(135deg, var(--rouge) 0%, var(--jaune-clair) 100%);
+}
+
+.generic-banner-1, .primary-btn-style-1:after {
+    background-image: linear-gradient(135deg, var(--mauve) 0%, var(--bleu-clair) 100%);
+}
+
+.generic-banner-2, .primary-btn-style-2:after {
+    background-image: linear-gradient(135deg, var(--mauve) 0%, var(--jaune-orange) 100%);
+}
+
+.generic-banner-3, .primary-btn-style-3:after {
+    background-image: linear-gradient(132deg, var(--jaune-orange) 0%, var(--vert-eau) 100%);
+}
+
+.generic-banner-4, .primary-btn-style-4:after ,.linGradRecetteFavorite{
+    background-image: linear-gradient(132deg, var(--jaune-pale) 0%, var(--rouge-pale) 100%);
+}
+
+.generic-banner-5, .primary-btn-style-5:after {
+    background-image: linear-gradient(132deg, var(--orange) 20%, var(--rouge) 100%);
+}
+
+.generic-banner-6, .primary-btn-style-6:after {
+    background-image: linear-gradient(132deg, var(--bleu-profond) 20%, var(--mauve) 100%);
+}
+
+.generic-banner-7, .primary-btn-style-7:after {
+    background-image: linear-gradient(132deg, var(--bleu-roi) 20%, var(--bleu-clair-fond) 100%);
+}
+
+.linGradRecettePerfect{
+    background-image: linear-gradient(90deg, var(--vert-eau) 0%, var(--vert-clair) 100%);
+}
+.linGradRecetteGood{
+    background-image: linear-gradient(90deg, var(--bleu-roi) 0%, var(--bleu-clair-fond) 100%);
+}
+.linGradRecetteNormal{
+    background-image: linear-gradient(90deg, var(--bleu-profond) 0%, var(--mauve) 100%);
+}
+.linGradRecetteBad{
+    background-image: linear-gradient(90deg, var(--rouge) 0%, var(--orange) 100%);
+}
+
+.linGradRecettePerfect~.hoverIngdtWith ,.linGradRecettePerfect~.hoverIngdtWithout{
+    background-image: linear-gradient(90deg, var(--vert-clair) 0%, var(--vert-pale) 100%);
+}
+.linGradRecetteGood~.hoverIngdtWith ,.linGradRecetteGood~.hoverIngdtWithout{
+    background-image: linear-gradient(90deg, var(--bleu-clair2) 0%, var(--bleu-clair) 100%);
+}
+.linGradRecetteNormal~.hoverIngdtWith ,.linGradRecetteNormal~.hoverIngdtWithout{
+    background-image: linear-gradient(90deg, var(--mauve) 0%, var(--mauve-pale) 100%);
+}
+.linGradRecetteBad~.hoverIngdtWith ,.linGradRecetteBad~.hoverIngdtWithout{
+    background-image: linear-gradient(90deg, var(--rouge-clair) 0%, var(--orange) 100%);
+}
+
+.btn-valider-search-recette{
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-valider-search-recette span{
+
+    color: #454545 !important;
+}
+.btn-valider-search-recette:after {
+    border-radius: 50px !important;
+    background: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+.btn-valider-search-recette:hover:after {
+    box-shadow: 0 0 30px 3px rgba(255,255,255, 0.25);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-valider-search-recette:active:after {
+    box-shadow: none;
+}
+
+.categOfAliment{
+    height:150px;
+    border-image-slice: 1;
+    font-weight: 600;
+    font-size: 18px;
+    background-position: center;
+    background-size: cover;
+}
+.categOfAliment:hover{
+    border-image-source: linear-gradient(135deg, var(--jaune-orange) 0%, var(--rouge) 100%);
+}
+.bannerVerticalAliment{
+    background-position: center;
+    background-size: cover;
+    height:calc( 600px + 3rem);
+}
+.categOfAliment > div{
+    background: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    color: white;
+    transition:0.3s;
+}
+.categOfAliment:hover > div{
+    background:rgba(0,0,0,0.2) ;
+}
+
+
+.partieIngredient{
+    background: white;
+    box-shadow: 0 0 11px 8px rgba(0,0,0,0.09);
+}
+.carteRecetteDansIngredient{
+    font-weight: 500;
+    padding:10px;
+    border: solid 1px #d9d9d9;
+    border-radius: 5px;
+    transition:0.5s;
+    -webkit-box-shadow: 8px 9px 16px 0 rgba(0,0,0,0.10);
+    box-shadow: 8px 9px 16px 0 rgba(0,0,0,0.10);
+}
+.carteRecetteDansIngredient:hover{
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
+}
+.titreDegradCyanMagenta{
+    font-weight: 600;
+    background:linear-gradient(147deg, var(--bleu-profond) 0%, var(--mauve) 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titreJauneorangeRouge{
+    font-weight: 600;
+    background:linear-gradient(147deg, var(--rouge) 0%, var(--jaune-orange) 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.titeVertfonceVertclair{
+    font-weight: 600;
+    background:linear-gradient(147deg, #0ea900 0%, #5bcb65 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.imgRecetteDansIngredient{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:100%;
+    height:200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.btnIngredient {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.ingdtWithWithout{
+    display: flex;
+    flex: auto 50px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: white;
+    border-left: 15px solid;
+    transition: 0s;
+    cursor: pointer;
+}
+
+.ingdtWithWithout div{
+    flex: auto;
+    transition: color 0.3s;
+}
+.ingdtWithWithout svg{
+    transition: color 0.3s;
+}
+
+.ingdtWithWithout svg:hover{
+    color:black;
+}
+
+.ingdtWithWithout:hover{
+    box-shadow: 0 0 20px 0 rgba(255,255,255, 0.25);
+}
+
+.ingdtWithWithout:hover div {
+    color:black;
+}
+
+.ingdtWith{
+    border-color: var(--vert-clair);
+}
+.ingdtWithout{
+    border-color: var(--rouge-clair);
+}
+
+.btnIngredient:hover {
+    background-color: #353535;
+    color: white
+}
+
+
+
+.dropdown-menu{
+    width: auto !important;
+    padding: 0;
+    border-radius: 15px;
+    min-width: 50%;
+}
+@media (min-width: 992px) {
+    .dropdown-menu{
+        min-width: 100%;
+    }
+}
+
+.dropdown-item{
+    width: auto;
+    margin: 2px;
+    padding: 0.75rem 1.75rem;
+    border-radius: 15px;
+}
+
+
+.inputIngdtWith .dropdown-item.active{
+    background-color: var(--vert-clair);
+}
+
+.inputIngdtWithout .dropdown-item.active{
+    background-color: var(--rouge-clair);
+}
+
+b{
+    color: inherit;
+    font-weight: inherit;
+}
+
+.carteRecetteSearchRecette, .carteRecetteFavorite{
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    top:0;
+    right:0;
+    box-shadow: -5px 5px 10px 0 rgba(126, 126, 126, 0.5);
+}
+.carteRecetteSearchRecette:hover, .carteRecetteFavorite:hover{
+    top:-5px;
+    right:-5px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: -10px 10px 20px 0 rgba(126, 126, 126, 0.5);
+}
+
+.badgeNumberCarteRecette{
+    width: 40px;
+    height: 40px;
+    border-radius: 17px;
+}
+
+.affichDetailsON{
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.affichDetailsOFF{
+    display: none;
+}
+
+.linGradRecettePerfect .badgeNumberCarteRecette{
+    background-color: var(--vert-pale);
+}
+
+.linGradRecetteGood .badgeNumberCarteRecette{
+    background-color: var(--bleu-pale);
+}
+
+.linGradRecetteNormal .badgeNumberCarteRecette{
+    background-color: var(--mauve-pale);
+}
+
+.linGradRecetteBad .badgeNumberCarteRecette{
+    background-color: var(--orange-pale);
+}
+
+.carteRecetteSearchRecette .titreCarteRecette , .carteRecetteFavorite .divCarteRecette{
+    color: white !important;
+}
+
+@media (min-width: 768px) {
+    .vertLineLeft-md {
+        border-left: 1px solid;
+    }
+}
+
+@media (min-width: 992px) {
+    .vertLineLeft-lg {
+        border-left: 1px solid;
+    }
+
+    .absolute-lg{
+        position: absolute;
+    }
+}
+
+.btnDeconnexion{
+    right: 0;
+    background: var(--bleu-fonce);
+    border-radius: 30px;
+    transition: 0.3s;
+    width: 130px;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.btnDeconnexion:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.btnDeconnexion:active{
+    transform: scale(0.95);
+    box-shadow: 0 0 7px rgba(255,255,255,0.5);
+}
+
+.vertLineLeft {
+    border-left: 1px solid ;
+}
+
+.border-grey{
+    border-color: #323232;
+}
+
+.border-white{
+    border-color: white;
+}
+
+.partieRecette {
+    background: white;
+    box-shadow: 0 0 11px 8px rgba(0, 0, 0, 0.09);
+}
+
+.blocTitreRecette{
+    border-radius: 30px 30px 0 0;
+}
+
+.blocIngredientsRecette{
+    border-radius: 0 0 30px 30px;
+}
+
+.blocImgRecette{
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.imgRecette {
+    border-radius: 15px;
+}
+
+.imgRecetteFavorite{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.bgImgRecetteFavorite{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 15px;
+}
+
+.preparationRecette{
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: 300;
+    color:black;
+}
+
+.inputIngdt{
+    padding-top:30px;
+}
+
+.p1-gradient-color {
+    background-image: linear-gradient(135deg, var(--jaune-clair) 0%, var(--rouge) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.green-title {
+    font-weight: 1000;
+    background: linear-gradient(135deg, var(--bleu-clair-fond) 0%, var(--jaune-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.red-title {
+    font-weight: 1000;
+    background: linear-gradient(135deg, var(--rouge) 0%, var(--jaune-clair) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.blue-title {
+    font-weight: 1000;
+    background: linear-gradient(135deg, var(--bleu-profond) 0%, var(--bleu-clair) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.itemBreadcrumb{
+    display: inline-block;
+    border-radius: 20px;
+    background-color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.delimiterBreadcrumb{
+    display: inline-block;
+}
+
+.itemBreadcrumb:hover{
+    transform: scale(1.05);
+}
+
+.itemBreadcrumb:active{
+    transform: scale(0.95);
+}
+
+

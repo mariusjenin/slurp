@@ -1,0 +1,58 @@
+1. Accès hiérarchique aux recettes à partir de la hiérarchie des aliments :
+    - Fonctions :
+        /- Rct.getIgdts()
+        /- Rct.hasIngdts([ingdt])
+
+        /- Ingdt.getSuperCategs()
+        /- Ingdt.getSousCategs()
+
+        /- Ingdt.isSousCategDirectOf(categ)
+        /- Ingdt.isSousCategRecursivOf(categ)
+        /- Ingdt.isIngdtAtom()
+        /- Ingdt.isAlimenGen()
+
+        /- Ingdt.isSuperCategDirectOf(categ)
+        /- Ingdt.isSuperCategRecursivOf(categ)
+
+        /- getRctsAvIngdts([ingdts])
+    - Vues : voir 4.
+
+2. Panier (de recettes) ou « Mes recettes préférées » :
+    - Fonctions :
+        - Panier.addRct(rct)
+        - Panier.removeRct(rct)
+        - Panier.actualiserPanierUser(user)
+    - Vue(s) :
+        - Voir ses recettes favorites (Liste de recettes avec boutons [+] et [-])
+
+3. Identification et données utilisateur :
+    - données Inscription :
+        - Login                 (Obligatoire)   (Unique)
+        - Mot de passe          (Obligatoire)
+        - Nom
+        - Prénom
+        - Sexe
+        - Email
+        - Date de naissance
+        - Adresse postale :
+            - voie et n° de voie
+            - Code postal
+            - Ville
+        - Tél
+    - Vues :
+        - Vue générale :
+            - soit Label "LOGIN"
+            - soit bouton "Se connecter"
+        - Vue "Se connecter" : Pop-up avec champs "Login" et "Mdp" + bouton "S'inscrire" pour aller sur Vue S'inscrire (Maybe JS)
+        - Vue "S'inscrire'" : Même pop-up avec tous les champs précisés au dessus
+
+4. Interface de recherche de recettes
+    - Vues :
+        - Vue d'une recette
+        - Vue d'une sous-catégorie
+        - Vue d'un ingrédient
+
+        - Recherche :
+            - Possibilité de sélectionner plusieurs sous-catégories
+            - Possibilité de sélectionner plusieurs ingrédients
+            - (Possibilité d'exclure des ingrédients)

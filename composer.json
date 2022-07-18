@@ -1,0 +1,25 @@
+{
+    "name": "marius/projet_boissons",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.2",
+        "selective/basepath": "^1.0",
+        "php-di/slim-bridge": "^3.0",
+        "ext-openssl": "*",
+      "ext-json": "*",
+      "ext-iconv": "*",
+      "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slurp\\Controler\\": "src/controler/",
+            "Slurp\\Model\\": "src/model/",
+            "Slurp\\Utils\\": "src/utils/",
+            "Slurp\\View\\": "src/view/",
+            "Slurp\\": "src/"
+        },
+        "files": [
+            "config/config.php"
+        ]
+    }
+}

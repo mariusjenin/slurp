@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="Colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Yaseen</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perso.css">
+</head>
+<body>
+<div class="main-wrapper main-wrapper-first">
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-top d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a style="display:flex;align-items: center" href="index.html">
+                            <img style="max-height: 70px" src="img/logo.png" alt="">
+                            <h1 style='color:#aa0a5f;font-size:40px;margin-left:15px;display:inline-block;font-family:"Cherry"'>
+                                Slurp</h1>
+                        </a>
+                    </div>
+                    <div class="main-menubar d-flex align-items-center">
+                        <nav class="hide">
+                            <a href="index.html">Accueil</a>
+                            <a href="trouvezRecettes.html">Trouver une recette</a>
+                            <a href="recettesFavorites.html">Mes recettes</a>
+                            <a href="aliment.html">Ingrédients</a>
+                            <a href="connexion.html">Connexion</a>
+                        </nav>
+                        <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner-area generic-banner generic-banner-7">
+            <div class="container">
+                <div class="row justify-content-center generic-height align-items-center relative">
+                    <div class="col-lg-8">
+                        <div class="banner-content text-center">
+                            <h1 class="text-white text-uppercase">Mon profil</h1>
+                        </div>
+                    </div>
+                    <div class="text-white text-uppercase btnDeconnexion d-flex align-items-center justify-content-center absolute-lg m-4">Deconnexion</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="">
+                <form class="row modifProfilForm p-4"
+                      action="/connexion.php" method="post">
+<!--                    <div class="itemForm100 text-center pl-3 pr-3 mb-20 text-danger">-->
+<!--                        Nous n'avons pas réussi à modifier votre profil-->
+<!--                    </div>-->
+                    <div class="col-12 col-lg-6 ">
+
+                        <div class="h4 titrePartModifForm pb-3 mb-3">Modifiez vos informations</div>
+                        <label class="d-flex flex-column">
+                            <div class="text-dark">Email</div>
+                            <input type="email" name="email" placeholder="Votre adresse email"
+                                   onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Votre adresse email'" required
+                                   class="mt-10 single-input">
+                        </label>
+                        <div class="d-flex">
+                            <label class="d-flex flex-column flex-1 m-1">
+                                <div class="text-dark">Prénom</div>
+                                <input type="text" name="prenom" placeholder="Votre prénom"
+                                       onfocus="this.placeholder = ''"
+                                       onblur="this.placeholder = 'Votre prénom'" class="mt-10 single-input">
+                            </label>
+                            <label class="d-flex flex-column flex-1 m-1">
+                                <div class="text-dark">Nom</div>
+                                <input type="text" name="nom" placeholder="Votre nom" onfocus="this.placeholder = ''"
+                                       onblur="this.placeholder = 'Votre nom'" class="mt-10 single-input">
+                            </label>
+                        </div>
+
+                        <div class="d-flex">
+                            <label class="d-flex flex-column flex-1">
+                                <div class="text-dark">Sexe</div>
+                                <div class="d-flex align-items-end justify-content-end mt-15">
+                                    <label class="d-flex flex-1 m-1 align-items-center justify-content-center"
+                                           onclick='if($("input[name=\"femme\"]").prop("checked")===false){$("input[name=\"homme\"]").prop("checked",false)}'>
+                                        <div class="text-dark d-inline-block">Femme</div>
+                                        <div class="confirm-checkbox ml-2">
+                                            <input type="checkbox" id="femmmeCB" name="femme" checked>
+                                            <label for="femmmeCB"></label>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex flex-1 m-1 align-items-center justify-content-center"
+                                           onclick='if($("input[name=\"homme\"]").prop("checked")===false){$("input[name=\"femme\"]").prop("checked",false)}'>
+                                        <div class="text-dark d-inline-block">Homme</div>
+                                        <div class="confirm-checkbox ml-2">
+                                            <input type="checkbox" id="hommeCB" name="homme">
+                                            <label for="hommeCB"></label>
+                                        </div>
+                                    </label>
+                                </div>
+                            </label>
+                            <label class="d-flex flex-column flex-1 m-1">
+                                <div class="">Date de naissance</div>
+                                <input type="date" name="dateNaiss" placeholder="Votre date de naissance"
+                                       onfocus="this.placeholder = ''"
+                                       onblur="this.placeholder = 'Votre date de naissance'" class="mt-10 single-input">
+                            </label>
+                        </div>
+
+
+                        <label class="d-flex flex-column">
+                            <div class="text-dark">Adresse</div>
+                            <input type="text" name="adresse" placeholder="Votre adresse"
+                                   onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Votre adresse'" class="mt-10 single-input">
+                        </label>
+                        <div class="d-flex">
+                            <label class="d-flex flex-column flex-1 m-1">
+                                <div class="text-dark">Code postal</div>
+                                <input type="text" name="codepostal" format="NNNNN" maxlength="5"
+                                       placeholder="Votre code postal"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre code postal'"
+                                       class="mt-10 single-input">
+                            </label>
+
+                            <label class="d-flex flex-column flex-1 m-1">
+                                <div class="text-dark">Ville</div>
+                                <input type="text" name="ville" placeholder="Votre ville"
+                                       onfocus="this.placeholder = ''"
+                                       onblur="this.placeholder = 'Votre ville'" class="mt-10 single-input">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 vertLineLeft-lg border-bleu ">
+                        <div class="h4 titrePartModifForm pb-3 mb-3">Changez votre mot de passe</div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div>
+                                <label class="m-1 itemForm100">
+                                    <div class="text-dark">Mot de passe actuel</div>
+                                    <input type="password" name="oldpassword" placeholder="Votre mot de passe actuel"
+                                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre mot de passe actuel'"
+                                           class="mt-10 single-input">
+                                </label>
+                                <label class="m-1 itemForm100">
+                                    <div class="text-dark">Nouveau mot de passe</div>
+                                    <input type="password" name="password" placeholder="Votre nouveau mot de passe"
+                                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre nouveau mot de passe'"
+                                           class="mt-10 single-input">
+                                </label>
+                                <label class="m-1 itemForm100">
+                                    <div class="text-dark">Répétez votre nouveau mot de passe</div>
+                                    <input type="password" name="password2" placeholder="Validez votre nouveau mot de passe"
+                                           onfocus="this.placeholder = ''"
+                                           onblur="this.placeholder = 'Validez votre nouveau mot de passe'"
+                                           class="mt-10 single-input">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="itemForm100 text-center mt-4">
+                        <button class="submitIdentification" type="submit"><img src="img/imgSlurp/check.png"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-area pt-60 pb-60">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <ul class="footer-menu flex-wrap justify-content-center">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="trouvezRecettes.html">Trouver une recette</a>
+                    </li>
+                    <li>
+                        <a href="recettesFavorites.html">Mes recettes</a>
+                    </li>
+                    <li>
+                        <a href="aliment.html">Ingrédients</a>
+                    </li>
+                    <li>
+                        <a href="connexion.html">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+            </footer>
+    </section>
+    <!-- End Footer Widget Area -->
+</div>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
